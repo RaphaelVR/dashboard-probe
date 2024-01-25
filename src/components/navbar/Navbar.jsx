@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Header = () => {
+const Navbar = () => {
   return (
-    <div>Header</div>
+    <div className='app__navbar'>Navbar</div>
   )
 }
 
-export default Header
+export default Navbar
