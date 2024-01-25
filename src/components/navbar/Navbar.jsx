@@ -7,8 +7,7 @@ const Navbar = () => {
         <img src="logo.svg" alt="" />
         <span>Raphael Dashboard</span>
       </div>
-      <div className="icons">
-        <img src="/search.svg" alt="" className="icon" />
+      <div className="icons">        
         <img src="/app.svg" alt="" className="icon" />
         <img src="/expand.svg" alt="" className="icon" />
         <div className="notification">
