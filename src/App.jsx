@@ -1,9 +1,8 @@
-// import React from 'react'
 import Navbar from './components/navbar/Navbar'
-import Menu from './components/menu/Menu'
+import Sider from './components/sider/Sider'
 import Card from './components/card/Card'
-import BigCard from './components/bigCard/BigCard'
 import './styles/global.scss'
+
 
 const App = () => {
   return (
@@ -13,7 +12,7 @@ const App = () => {
       </div>
         <div className='app__container'>
           <div className='app__menuContainer'>
-            <Menu />
+            <Sider />
           </div>
           <div className='app__contentContainer'>
             <div className='app__card'>
@@ -21,10 +20,6 @@ const App = () => {
             </div>
           </div>          
         </div>
-        <div className='app__bigCard'>
-            <BigCard />
-        </div>
-
     </div>
   )
 }
