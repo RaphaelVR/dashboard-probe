@@ -13,12 +13,15 @@ export const AccuWeather = ({ cityData }) => {
   useEffect(() => {
     setData(null);
     setLoading(true);
-    axios.get(`http://dataservice.accuweather.com/currentconditions/v1/${cityData.Key}?apikey=XsO8n11QEHYhVV4o07tR4SsznowRT1oT`)
+    axios.get(`http://dataservice.accuweather.com/currentconditions/v1/${cityData.Key}?apikey=zBWfsCYDd8MdbTG9pRGl7UAStbXhDuZ8`)
       .then((res) => {
         setData(res.data[0]);
         setLoading(false);
       });
   }, [cityData.Key]);
+
+  
+  
 
   return (
     <>

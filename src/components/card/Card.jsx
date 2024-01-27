@@ -24,12 +24,14 @@ const Card = () => {
   // city search form
   const fetchCity = (e) =>{
     e.preventDefault();
-    axios.get(`http://dataservice.accuweather.com/locations/v1/cities/search?apikey=ICfOrVGI3ofdnGODMlLrRMwyPbISOCdO&q=${citySearch}`)
+    axios.get(`http://dataservice.accuweather.com/locations/v1/cities/search?apikey=zBWfsCYDd8MdbTG9pRGl7UAStbXhDuZ8&q=${citySearch}`)
     .then((res)=>{
       setCityData(res.data[0]);
       setCitySearch('');
     }).catch(err=>console.log(err.message));
   }
+
+
 
   return (
     <div className="main">         
@@ -50,6 +52,7 @@ const Card = () => {
               </div>
             </form>
             {cityData&& <div style={{padding:10+'px', width: 100+'%'}}><AccuWeather cityData={cityData}/></div>}
+            {/* {console.log(cityData)} */}
         </div>
         <div 
         className='card card2'
